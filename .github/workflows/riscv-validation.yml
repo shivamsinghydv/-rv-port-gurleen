@@ -18,8 +18,7 @@ jobs:
     - name: Install RISC-V Toolchain
       run: |
         sudo apt-get update
-        sudo apt-get install -y riscv64-linux-gnu-gcc riscv64-linux-gnu-g++ \
-                                riscv64-linux-gnu-gfortran qemu-user-static cmake
+        sudo apt-get install -y crossbuild-essential-riscv64 qemu-user-static cmake
     
     - name: Run DGEMM Validation (50 cases)
       run: |
