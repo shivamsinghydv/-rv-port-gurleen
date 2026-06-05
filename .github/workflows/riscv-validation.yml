@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Install RISC-V Toolchain
       run: |
@@ -139,7 +139,7 @@ jobs:
     needs: validation
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Install RISC-V Toolchain
       run: |
