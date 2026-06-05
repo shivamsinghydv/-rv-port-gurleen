@@ -117,7 +117,7 @@ jobs:
     
     - name: Upload Report Artifact
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: validation-reports
         path: |
@@ -208,7 +208,7 @@ jobs:
         PYTHON_EOF
     
     - name: Upload Audit Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: audit-reports
         path: audit_40_packages.json
